@@ -27,11 +27,11 @@ def won?(board)
 end
 
 def draw?(board)
-  if !won?(board) && full?(board)
-    true
-  else !won?(board) && !full?(board)
-    false
-  end
+!won?(board) && full?(board)
+    # true
+  # else !won?(board) && !full?(board)
+  #   false
+  # end
 end
 
 def over?(board)
